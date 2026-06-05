@@ -147,6 +147,7 @@ python .\generate_samples.py `
 
 交给 2 号：
 
+- `docs/member2_operation_template.md`
 - `fill_once.py`
 - `generate_samples.py`
 - 已人工验证的 `questionnaire_map.json`
