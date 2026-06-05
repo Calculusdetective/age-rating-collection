@@ -1,0 +1,400 @@
+{
+  "schema_version": "1.0",
+  "mode": "discover",
+  "collected_at": "2026-06-03T06:16:43.578388+00:00",
+  "status": "ok",
+  "note": "Read-only discovery; no questionnaire answer was clicked.",
+  "discovery": {
+    "url": "https://play.google.com/console/u/0/developers/6147841152309536951/app/4975581156673272002/app-content/content-rating-iarc-questionnaire",
+    "title": "Content ratings | The Same Old Waves",
+    "visible_controls": [
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--2",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--113"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--114"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--3",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--115"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--116"
+          }
+        ]
+      },
+      {
+        "group": "a23803E2A-717F-4DEA-993F-737B4EA8A550--117",
+        "options": [
+          {
+            "type": "checkbox",
+            "value": "",
+            "label": "",
+            "checked": true,
+            "id": ""
+          }
+        ]
+      },
+      {
+        "group": "a23803E2A-717F-4DEA-993F-737B4EA8A550--118",
+        "options": [
+          {
+            "type": "checkbox",
+            "value": "",
+            "label": "",
+            "checked": false,
+            "id": ""
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--4",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Rare",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--119"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Often",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--120"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--5",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--121"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--122"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--6",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--123"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--124"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--7",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--125"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--126"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--8",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--127"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--128"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--9",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--129"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--130"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--10",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--131"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--132"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--11",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--133"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--134"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--12",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--135"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--136"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--13",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--137"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--138"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--14",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--139"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--140"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--15",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--141"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--142"
+          }
+        ]
+      },
+      {
+        "group": "radio-group-a82369CCF-867F-49E8-8FBD-0ECDCD7228D2--16",
+        "options": [
+          {
+            "type": "radio",
+            "value": "",
+            "label": "Yes",
+            "checked": false,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--143"
+          },
+          {
+            "type": "radio",
+            "value": "",
+            "label": "No",
+            "checked": true,
+            "id": "a23803E2A-717F-4DEA-993F-737B4EA8A550--144"
+          }
+        ]
+      }
+    ],
+    "visible_buttons": [
+      "",
+      "notifications Notifications",
+      "The Same Old Waves",
+      "",
+      "dashboard Dashboard",
+      "bar_chart Statistics",
+      "overview Publishing overview",
+      "shield Protected with Play",
+      "rocket_launch Test and release",
+      "arrow_rightLatest releases and bundles",
+      "arrow_rightProduction",
+      "arrow_rightTestingexpand_more",
+      "arrow_rightOpen testing",
+      "arrow_rightClosed testing",
+      "arrow_rightInternal testing",
+      "arrow_rightPre-launch reportexpand_more",
+      "arrow_rightOverview",
+      "arrow_rightDetails",
+      "arrow_rightSettings",
+      "arrow_rightInternal app sharing",
+      "arrow_rightPre-registration",
+      "arrow_rightAdvanced settings",
+      "vital_signs Monitor and improve",
+      "Reach and devices expand_more",
+      "arrow_rightOverview",
+      "arrow_rightDevice catalog",
+      "Ratings and reviews expand_more",
+      "arrow_rightRatings",
+      "arrow_rightReviews",
+      "arrow_rightReviews analysis",
+      "arrow_rightTesting feedback",
+      "Android vitals expand_more",
+      "arrow_rightOverview",
+      "arrow_rightCrashes and ANRs",
+      "arrow_rightApp size",
+      "Policy and programs expand_less",
+      "Policy status",
+      "App content",
+      "Teacher Approved",
+      "finance_mode Grow users",
+      "arrow_rightStore presenceexpand_more",
+      "arrow_rightStore listings",
+      "arrow_rightStore listing experiments",
+      "arrow_rightStore settings",
+      "arrow_rightStore performanceexpand_more",
+      "arrow_rightStore analysis",
+      "arrow_rightListing conversion analysis",
+      "arrow_rightTranslationsexpand_more",
+      "arrow_rightApp strings",
+      "arrow_rightStore listings and products",
+      "arrow_rightDeep links",
+      "sell Monetize with Play",
+      "arrow_rightProductsexpand_more",
+      "arrow_rightApp pricing",
+      "arrow_rightOne-time products",
+      "arrow_rightSubscriptions",
+      "arrow_rightMerchandising and optimization",
+      "arrow_rightPrice experiments",
+      "arrow_rightPromo codes",
+      "arrow_rightFinancial reportsexpand_more",
+      "arrow_rightOverview",
+      "arrow_rightSubscriptionsexpand_more",
+      "arrow_rightOverview",
+      "arrow_rightRetention",
+      "arrow_rightCancellations",
+      "arrow_rightRevenue",
+      "arrow_rightBuyers",
+      "arrow_rightConversions",
+      "arrow_rightMonetization setup",
+      "Discard changes",
+      "Next",
+      "Save",
+      "Back",
+      "close"
+    ],
+    "page_text": "Loading Google Play Console To publish apps, finish setting up your developer account View details notifications Notifications The Same Old Waves keyboard_backspace All apps dashboard Dashboard bar_chart Statistics overview Publishing overview shield Protected with Play rocket_launch Test and release vital_signs Monitor and improve Reach and devices expand_more Ratings and reviews expand_more Android vitals expand_more Policy and programs expand_less Policy status App content Teacher Approved finance_mode Grow users sell Monetize with Play keyboard_backspace App content Content ratings Discard changes check Category 2 Questionnaire 3 Summary Game Violence, Blood, or Gory Images check_circle Completed Does the game contain inferences of, references to, or depictions of violence, blood, or gory images? This includes violence directed at the player's character. Please note that this question does not refer to user-generated content. Learn more Yes No Fear check_circle Completed Does the game contain pictures or sounds likely to be scary, horrifying, or disturbing? Please note that this question does not refer to user-generated content. Yes No Please select all that the game includes: Scary elements Learn more Horrifying elements Learn more How frequent are the scary elements? Rare Often Sexuality, Suggestiveness, or Dating Games check_circle Completed Does the game contain inferences of, references to, or depictions of sexuality, sexual violence, suggestiveness, dating games, revealing attire, or nudity? Please note that this question does not refer to user-generated content. Yes No Gambling Themes, Simulated Gambling, or Real Gambling check_circle Completed Does the game contain gambling, simulations of casino gambling/bingo, or gambling themes? Please note that this question does not refer to user-generated content. Yes No Language check_circle Completed Does the game contain any potentially offensive language? Please note that this question does not refer to user-generated content. Yes No Controlled Substance check_circle Completed Does the game contain any reference to or use of drugs, alcohol, or tobacco? Please note that this question does not refer to user-generated content. Yes No Crude Humor check_circle Completed Does the game contain any bodily functions such as belching, flatulence, or vomiting when used for humorous purposes? Please note that this question does not refer to user-generated content. Yes No Digital Purchases, Cash Convertible Rewards, or NFTs check_circle Completed Does the game include the purchase or sale of digital goods, cash rewards, gift cards, play-to-earn features, convertible cryptocurrency rewards, or the issuance of transferable digital assets (e.g., NFTs)? Yes No Miscellaneous check_circle Completed Does the game natively allow users to interact or exchange content with other users through voice communication, text, or sharing images or audio? Learn more Yes No Does the game share the user's current and precise physical location with other users? Learn more Yes No Does the game contain any swastikas, other Nazi symbols or propaganda deemed unconstitutional in Germany? Learn more Yes No Does the game contain any content that can substantially erode the national identity of the Republic of Korea by describing anti-national acts or distorting historical facts? Yes No Does the game advocate committing acts of terrorism? Learn more Yes No Does the game contain realistic descriptions of crimes (e.g., robbery, kidnapping) or techniques that can be used in criminal offenses? Yes No Next Save Back Product updates Status dashboard Help © 2026 Google Privacy Developer Distribution Agreement Terms of Service An unexpected error has occurred. Please try again. (5E6E2241) Press F6 to access notification buttons. An unexpected error has occurred. Please try again. (5E6E2241) close"
+  },
+  "screenshot": "results\\discover_fear_often_questionnaire.png"
+}

@@ -1,0 +1,1037 @@
+{
+  "schema_version": "1.0",
+  "status": "all_no_baseline_and_fear_branch_verified_other_yes_branches_pending",
+  "scope": {
+    "platform": "Google Play Console",
+    "branch": "Game",
+    "app_policy": "isolated_unpublished_draft_only",
+    "final_submit_allowed": false
+  },
+  "notes": [
+    "Top-level Game questions were verified from screenshots/screenshots/问卷全no.png on 2026-06-03.",
+    "The all-No Summary baseline is recorded in docs/baseline_all_no.md.",
+    "The Fear=yes, Scary elements=yes, Rare probe is recorded in docs/probe_yes_fear.md.",
+    "The Fear=yes, Scary elements=yes, Often probe is recorded in docs/probe_yes_fear_often.md.",
+    "The Fear=yes, Horrifying elements=yes, Rare/Often probes are recorded in docs/probe_yes_fear_horrifying.md.",
+    "Yes branches are not complete yet. Keep hidden child questions as N/A rather than coercing them to no."
+  ],
+  "questions": [
+    {
+      "question_id": "violence.exists",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Does the game contain inferences of, references to, or depictions of violence, blood, or gory images? This includes violence directed at the player's character. Please note that this question does not refer to user-generated content.",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [
+        "violence.humans",
+        "violence.non_humans",
+        "violence.gory_without_violence",
+        "violence.unrelated_blood"
+      ],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "question_id": "violence.humans",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Violence or implied violence against humans",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.exists",
+        "equals": "yes"
+      },
+      "children": [
+        "violence.humans.setting_context",
+        "violence.humans.visual_style",
+        "violence.humans.reactions",
+        "violence.humans.presentation_referred_to",
+        "violence.humans.presentation_implied",
+        "violence.humans.presentation_rare_distant",
+        "violence.humans.presentation_often_distant",
+        "violence.humans.presentation_rare_closeup",
+        "violence.humans.presentation_often_closeup",
+        "violence.humans.blood_gore_level",
+        "violence.humans.realistic_war",
+        "violence.humans.innocents_harmed",
+        "violence.humans.dark_overtones"
+      ],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_yes_questionnaire.json",
+      "screenshot": "results/discover_violence_yes_questionnaire.png"
+    },
+    {
+      "question_id": "violence.non_humans",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Violence against anything other than humans (e.g., animals, fantasy creatures, robots, vehicles)",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.exists",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_yes_questionnaire.json",
+      "screenshot": "results/discover_violence_yes_questionnaire.png"
+    },
+    {
+      "question_id": "violence.gory_without_violence",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Disturbing or gory images without a violent act shown.",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.exists",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_yes_questionnaire.json",
+      "screenshot": "results/discover_violence_yes_questionnaire.png"
+    },
+    {
+      "question_id": "violence.unrelated_blood",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Blood that isn't directly related to a violent act (e.g., blood on clothing, blood in the background, blood resulting from performing surgery)",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.exists",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_yes_questionnaire.json",
+      "screenshot": "results/discover_violence_yes_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.setting_context",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "In what kind of setting (context, storyline) does the violence occur?",
+      "type": "single_choice",
+      "options": [
+        "fantastical",
+        "realistic"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.visual_style",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Does the game have a pixelated or childlike style?",
+      "type": "single_choice",
+      "options": [
+        "childlike",
+        "pixelated",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.reactions",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "How would you describe the reactions to violence?",
+      "type": "single_choice",
+      "options": [
+        "unrealistic",
+        "realistic"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.presentation_referred_to",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Referred to",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.presentation_implied",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Implied but not seen",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.presentation_rare_distant",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Rarely depicted from a distant perspective",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.presentation_often_distant",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Often depicted from a distant perspective",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.presentation_rare_closeup",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Rarely depicted from a close-up perspective",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.presentation_often_closeup",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Often depicted from a close-up perspective",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.blood_gore_level",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "What is the level of blood and/or gore associated with this violence?",
+      "type": "single_choice",
+      "options": [
+        "none",
+        "mild/limited",
+        "moderate",
+        "high"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.realistic_war",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Does the game take place in a realistic or historical war setting?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.innocents_harmed",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Can innocent or defenseless characters be seriously injured or killed?",
+      "type": "single_choice",
+      "options": [
+        "no",
+        "yes_with_penalties",
+        "yes_without_penalties"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "violence.humans.dark_overtones",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Are there any fierce sounds, sinister or intimidating characters, or dark overtones associated with this violence?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/discover_violence_humans_questionnaire.json",
+      "screenshot": "results/discover_violence_humans_questionnaire.png"
+    },
+    {
+      "question_id": "fear.contains_disturbing_content",
+      "section": "Fear",
+      "prompt": "Does the game contain pictures or sounds likely to be scary, horrifying, or disturbing? Please note that this question does not refer to user-generated content.",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [
+        "fear.scary_elements",
+        "fear.horrifying_elements"
+      ],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "screenshots/仅fear_yes.png",
+      "screenshot": "screenshots/仅fear_yes.png"
+    },
+    {
+      "question_id": "fear.scary_elements",
+      "section": "Fear",
+      "prompt": "Scary elements",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "fear.contains_disturbing_content",
+        "equals": "yes"
+      },
+      "children": [
+        "fear.scary_frequency"
+      ],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "screenshots/仅fear_yes.png",
+      "screenshot": "screenshots/仅fear_yes.png"
+    },
+    {
+      "question_id": "fear.horrifying_elements",
+      "section": "Fear",
+      "prompt": "Horrifying elements",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "fear.contains_disturbing_content",
+        "equals": "yes"
+      },
+      "children": [
+        "fear.horrifying_frequency"
+      ],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "screenshots/仅fear_yes.png",
+      "screenshot": "screenshots/仅fear_yes.png"
+    },
+    {
+      "question_id": "fear.scary_frequency",
+      "section": "Fear",
+      "prompt": "How frequent are the scary elements?",
+      "type": "single_choice",
+      "options": [
+        "rare",
+        "often"
+      ],
+      "visible_when": {
+        "parent_id": "fear.scary_elements",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "screenshots/仅fear_yes.png",
+      "screenshot": "screenshots/仅fear_yes.png"
+    },
+    {
+      "question_id": "fear.horrifying_frequency",
+      "section": "Fear",
+      "prompt": "How frequent are the horrifying elements?",
+      "type": "single_choice",
+      "options": [
+        "rare",
+        "often"
+      ],
+      "visible_when": {
+        "parent_id": "fear.horrifying_elements",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "current_console_observation_2026-06-03",
+      "screenshot": "results/run_fear_horrifying_only.png"
+    },
+    {
+      "question_id": "sexuality.exists",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Does the game contain inferences of, references to, or depictions of sexuality, sexual violence, suggestiveness, dating games, revealing attire, or nudity? Please note that this question does not refer to user-generated content.",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [
+        "sexuality.sexual_activity",
+        "sexuality.suggestive_themes",
+        "sexuality.dating_games",
+        "sexuality.nudity_revealing_outfits",
+        "sexuality.sexual_violence_refs"
+      ],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "sexuality.sexual_activity",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Sexual Activity - Includes both moving and still images of sexual activity",
+      "visible_when": {
+        "parent_id": "sexuality.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_sexuality_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "sexuality.suggestive_themes",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Suggestive/Sexual Themes or References",
+      "visible_when": {
+        "parent_id": "sexuality.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_sexuality_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "sexuality.dating_games",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Dating Games - Interactive dating, marriage, or other romantic relationships between game characters",
+      "visible_when": {
+        "parent_id": "sexuality.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_sexuality_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "sexuality.nudity_revealing_outfits",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Nudity or Revealing Outfits",
+      "visible_when": {
+        "parent_id": "sexuality.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_sexuality_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "sexuality.sexual_violence_refs",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Depictions of or References to Sexual Violence",
+      "visible_when": {
+        "parent_id": "sexuality.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_sexuality_yes_questionnaire.json"
+    },
+    {
+      "question_id": "gambling.exists",
+      "section": "Gambling Themes, Simulated Gambling, or Real Gambling",
+      "prompt": "Does the game contain gambling, simulations of casino gambling/bingo, or gambling themes? Please note that this question does not refer to user-generated content.",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [
+        "gambling.themes",
+        "gambling.playable_bingo",
+        "gambling.playable_casino_betting",
+        "gambling.in_game_currency_rewards"
+      ],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "gambling.themes",
+      "section": "Gambling Themes, Simulated Gambling, or Real Gambling",
+      "prompt": "Gambling themes",
+      "visible_when": {
+        "parent_id": "gambling.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_gambling_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "gambling.playable_bingo",
+      "section": "Gambling Themes, Simulated Gambling, or Real Gambling",
+      "prompt": "Playable bingo games",
+      "visible_when": {
+        "parent_id": "gambling.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_gambling_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "gambling.playable_casino_betting",
+      "section": "Gambling Themes, Simulated Gambling, or Real Gambling",
+      "prompt": "Playable casino games, lotteries, or racetrack betting",
+      "visible_when": {
+        "parent_id": "gambling.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_gambling_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "gambling.in_game_currency_rewards",
+      "section": "Gambling Themes, Simulated Gambling, or Real Gambling",
+      "prompt": "Any other games that use in-game currency/tokens to play and can reward the same currency through gameplay.",
+      "visible_when": {
+        "parent_id": "gambling.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_gambling_yes_questionnaire.json"
+    },
+    {
+      "question_id": "language.offensive_language",
+      "section": "Language",
+      "prompt": "Does the game contain any potentially offensive language? Please note that this question does not refer to user-generated content.",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [
+        "language.minor_profanities",
+        "language.moderate_swearing",
+        "language.discriminatory_language",
+        "language.sexual_expletives"
+      ],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "language.minor_profanities",
+      "section": "Language",
+      "prompt": "Minor profanities (e.g., \"go to hell\")",
+      "visible_when": {
+        "parent_id": "language.offensive_language",
+        "equals": "yes"
+      },
+      "source": "results/discover_language_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "language.moderate_swearing",
+      "section": "Language",
+      "prompt": "Moderate swearing or other language or gestures that could be considered moderately or significantly offensive",
+      "visible_when": {
+        "parent_id": "language.offensive_language",
+        "equals": "yes"
+      },
+      "source": "results/discover_language_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "language.discriminatory_language",
+      "section": "Language",
+      "prompt": "Discriminatory language (against race, religion, sex, etc...)",
+      "visible_when": {
+        "parent_id": "language.offensive_language",
+        "equals": "yes"
+      },
+      "source": "results/discover_language_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "language.sexual_expletives",
+      "section": "Language",
+      "prompt": "Sexual expletives",
+      "visible_when": {
+        "parent_id": "language.offensive_language",
+        "equals": "yes"
+      },
+      "source": "results/discover_language_yes_questionnaire.json"
+    },
+    {
+      "question_id": "controlled_substance.exists",
+      "section": "Controlled Substance",
+      "prompt": "Does the game contain any reference to or use of drugs, alcohol, or tobacco? Please note that this question does not refer to user-generated content.",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [
+        "controlled_substance.illegal_recreational_drugs",
+        "controlled_substance.fantasy_drugs",
+        "controlled_substance.medical_drugs",
+        "controlled_substance.alcohol",
+        "controlled_substance.tobacco"
+      ],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "controlled_substance.illegal_recreational_drugs",
+      "section": "Controlled Substance",
+      "prompt": "Illegal or Recreational Drugs",
+      "visible_when": {
+        "parent_id": "controlled_substance.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_controlled_substance_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "controlled_substance.fantasy_drugs",
+      "section": "Controlled Substance",
+      "prompt": "Fantasy Drugs",
+      "visible_when": {
+        "parent_id": "controlled_substance.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_controlled_substance_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "controlled_substance.medical_drugs",
+      "section": "Controlled Substance",
+      "prompt": "Medical Drugs",
+      "visible_when": {
+        "parent_id": "controlled_substance.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_controlled_substance_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "controlled_substance.alcohol",
+      "section": "Controlled Substance",
+      "prompt": "Alcohol",
+      "visible_when": {
+        "parent_id": "controlled_substance.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_controlled_substance_yes_questionnaire.json"
+    },
+    {
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "screenshot": "not captured in batch branch probe",
+      "question_id": "controlled_substance.tobacco",
+      "section": "Controlled Substance",
+      "prompt": "Tobacco",
+      "visible_when": {
+        "parent_id": "controlled_substance.exists",
+        "equals": "yes"
+      },
+      "source": "results/discover_controlled_substance_yes_questionnaire.json"
+    },
+    {
+      "question_id": "crude_humor.exists",
+      "section": "Crude Humor",
+      "prompt": "Does the game contain any bodily functions such as belching, flatulence, or vomiting when used for humorous purposes? Please note that this question does not refer to user-generated content.",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "question_id": "digital_purchases.exists",
+      "section": "Digital Purchases, Cash Convertible Rewards, or NFTs",
+      "prompt": "Does the game include the purchase or sale of digital goods, cash rewards, gift cards, play-to-earn features, convertible cryptocurrency rewards, or the issuance of transferable digital assets (e.g., NFTs)?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "question_id": "misc.user_interaction",
+      "section": "Miscellaneous",
+      "prompt": "Does the game natively allow users to interact or exchange content with other users through voice communication, text, or sharing images or audio?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "question_id": "misc.precise_location",
+      "section": "Miscellaneous",
+      "prompt": "Does the game share the user's current and precise physical location with other users?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "question_id": "misc.germany_nazi_symbols",
+      "section": "Miscellaneous",
+      "prompt": "Does the game contain any swastikas, other Nazi symbols or propaganda deemed unconstitutional in Germany?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "question_id": "misc.korea_national_identity",
+      "section": "Miscellaneous",
+      "prompt": "Does the game contain any content that can substantially erode the national identity of the Republic of Korea by describing anti-national acts or distorting historical facts?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "question_id": "misc.terrorism_advocacy",
+      "section": "Miscellaneous",
+      "prompt": "Does the game advocate committing acts of terrorism?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "question_id": "misc.realistic_crimes",
+      "section": "Miscellaneous",
+      "prompt": "Does the game contain realistic descriptions of crimes (e.g., robbery, kidnapping) or techniques that can be used in criminal offenses?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": null,
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "screenshots/问卷全no.png",
+      "screenshot": "screenshots/问卷全no.png"
+    }
+  ]
+}

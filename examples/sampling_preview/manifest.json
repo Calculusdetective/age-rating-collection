@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "seed": 20260603,
+  "requested_unique_samples": 10,
+  "generated_unique_samples": 10,
+  "attempts": 10,
+  "strategy_targets": {
+    "no_biased": 3,
+    "yes_biased": 2,
+    "balanced_random": 5
+  },
+  "strategy_counts": {
+    "yes_biased": 2,
+    "balanced_random": 5,
+    "no_biased": 3
+  },
+  "anchors": [
+    "all_no",
+    "all_yes"
+  ],
+  "warning": ""
+}

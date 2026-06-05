@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "mode": "run",
+  "collected_at": "2026-06-03T07:00:36.523671+00:00",
+  "resolved_answers": {
+    "violence.exists": "no",
+    "fear.contains_disturbing_content": "yes",
+    "fear.scary_elements": "no",
+    "fear.horrifying_elements": "yes",
+    "fear.scary_frequency": "N/A",
+    "fear.horrifying_frequency": "often",
+    "sexuality.exists": "no",
+    "gambling.exists": "no",
+    "language.offensive_language": "no",
+    "controlled_substance.exists": "no",
+    "crude_humor.exists": "no",
+    "digital_purchases.exists": "no",
+    "misc.user_interaction": "no",
+    "misc.precise_location": "no",
+    "misc.germany_nazi_symbols": "no",
+    "misc.korea_national_identity": "no",
+    "misc.terrorism_advocacy": "no",
+    "misc.realistic_crimes": "no"
+  },
+  "canonical_hash": "7b70b8c1c6f17e7940940038d4c57468eeaf50c3266df8094de67f4ed372047c",
+  "sample_id": "fear_horrifying_often",
+  "strategy": "manual_probe_auto",
+  "status": "summary_reached",
+  "screenshot": "results\\run_fear_horrifying_often.png",
+  "navigation_steps": 4,
+  "summary": {
+    "ratings": [
+      {
+        "authority_hint": "IARC",
+        "rating_hint": "",
+        "raw_context": "Rating authorities participating in IARC may change your app's rating after they review it | Google and IARC will share your contact information, questionnaire responses, ratings, developer support requests, and app details with rating authorities. Learn more | Category | Game | Fear"
+      },
+      {
+        "authority_hint": "IARC",
+        "rating_hint": "",
+        "raw_context": "Google and IARC will share your contact information, questionnaire responses, ratings, developer support requests, and app details with rating authorities. Learn more | Category | Game | Fear | Pictures or sounds likely to be horrifying (Often)"
+      },
+      {
+        "authority_hint": "Australian Classification Board",
+        "rating_hint": "to 15",
+        "raw_context": "Rating authority: Australian Classification Board (ACB) | Rating | Restricted to 15+ | Content descriptors | Strong Horror Themes"
+      },
+      {
+        "authority_hint": "ClassInd",
+        "rating_hint": " 12",
+        "raw_context": "Rating authority: Classificação Indicativa (ClassInd) | Rating | Rated 12+ | Content descriptors | Fear"
+      },
+      {
+        "authority_hint": "ESRB",
+        "rating_hint": "Teen",
+        "raw_context": "Rating authority: Entertainment Software Rating Board (ESRB) | Rating | Teen | Content descriptors | Violence"
+      },
+      {
+        "authority_hint": "GRAC",
+        "rating_hint": "12",
+        "raw_context": "Rating authority: Game Rating and Administration Committee (GRAC) | Rating | 12+ | Content descriptors | Fear"
+      },
+      {
+        "authority_hint": "PEGI",
+        "rating_hint": " 12",
+        "raw_context": "Rating authority: Pan-European Game Information (PEGI) | Rating | PEGI 12 | Content descriptors | Horror"
+      },
+      {
+        "authority_hint": "PEGI",
+        "rating_hint": " 12",
+        "raw_context": "PEGI 12 | Content descriptors | Horror | Rating authority: Unterhaltungssoftware Selbstkontrolle (USK) | Rating"
+      },
+      {
+        "authority_hint": "USK",
+        "rating_hint": " 16",
+        "raw_context": "Rating authority: Unterhaltungssoftware Selbstkontrolle (USK) | Rating | USK: Ages 16+ | Content descriptors | Horror"
+      },
+      {
+        "authority_hint": "USK",
+        "rating_hint": " 16",
+        "raw_context": "USK: Ages 16+ | Content descriptors | Horror | Rating authority: IARC Generic | Rating"
+      },
+      {
+        "authority_hint": "IARC",
+        "rating_hint": "Rated for 12",
+        "raw_context": "Rating authority: IARC Generic | Rating | Rated for 12+ | Content descriptors | Horror"
+      }
+    ],
+    "content_descriptors": [],
+    "interactive_elements": [],
+    "raw_text": "Loading Google Play Console\nTo publish apps, finish setting up your developer account\nView details\nnotifications\nNotifications\nThe Same Old Waves\nkeyboard_backspace\nAll apps\ndashboard\nDashboard\nbar_chart\nStatistics\noverview\nPublishing overview\nshield\nProtected with Play\nrocket_launch\nTest and release\nvital_signs\nMonitor and improve\nReach and devices\nexpand_more\nRatings and reviews\nexpand_more\nAndroid vitals\nexpand_more\nPolicy and programs\nexpand_less\nPolicy status\nApp content\nTeacher Approved\nfinance_mode\nGrow users\nsell\nMonetize with Play\nkeyboard_backspace\nApp content\nContent ratings\nDiscard changes\ncheck\nCategory\ncheck\nQuestionnaire\n3\nSummary\n\nRatings shown below may differ from the ratings shown to users on Google Play.\n\nGoogle may reject your app or app update for misrepresentation of your app’s content\nGoogle may use your questionnaire responses to generate ratings for specific territories as required by local law\nRating authorities participating in IARC may change your app's rating after they review it\n\nGoogle and IARC will share your contact information, questionnaire responses, ratings, developer support requests, and app details with rating authorities. Learn more\n\nCategory\nGame\nFear\nPictures or sounds likely to be horrifying (Often)\nRating authority: Australian Classification Board (ACB)\nRating\nRestricted to 15+\nContent descriptors\nStrong Horror Themes\nRating authority: Classificação Indicativa (ClassInd)\nRating\nRated 12+\nContent descriptors\nFear\nRating authority: Entertainment Software Rating Board (ESRB)\nRating\nTeen\nContent descriptors\nViolence\nRating authority: Game Rating and Administration Committee (GRAC)\nRating\n12+\nContent descriptors\nFear\nRating authority: Digital Game Self-regulation Committee (DGSC)\nRating\nParental Guidance 15\nContent descriptors\nHorror\nRating authority: General Authority of Media Regulation (Gmedia)\nRating\n18\nContent descriptors\n-\nRating authority: Pan-European Game Information (PEGI)\nRating\nPEGI 12\nContent descriptors\nHorror\nRating authority: Unterhaltungssoftware Selbstkontrolle (USK)\nRating\nUSK: Ages 16+\nContent descriptors\nHorror\nRating authority: IARC Generic\nRating\nRated for 12+\nContent descriptors\nHorror\nRating authority: Google Play\nRating\nRated for 12+\nContent descriptors\nHorror\ncheck_circle\nIf you save, changes will be saved in Publishing overview, ready for you to send for review\nBack\nSave\nProduct updates\nStatus dashboard\nHelp\n© 2026 Google\nPrivacy\nDeveloper Distribution Agreement\nTerms of Service\nQuestionnaire saved\nQuestionnaire saved",
+    "parser_note": "ratings are conservative hints; calibrate selectors after the first manual run and keep raw_text as the source of truth"
+  },
+  "note": "Stopped at Summary by design. Final Submit was not clicked."
+}

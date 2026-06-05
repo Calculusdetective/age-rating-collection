@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "note": "Conservative starter selectors. Calibrate after the first read-only discovery run.",
+  "allowed_navigation_buttons": [
+    "Next",
+    "Continue"
+  ],
+  "captcha_selectors": [
+    "iframe[src*='recaptcha']",
+    ".g-recaptcha",
+    "[data-sitekey]",
+    "iframe[title*='reCAPTCHA']"
+  ],
+  "captcha_text_markers": [
+    "reCAPTCHA",
+    "I'm not a robot",
+    "Verify you are human",
+    "验证您是真人"
+  ],
+  "rate_limit_text_markers": [
+    "Too many requests",
+    "Try again later",
+    "Rate limit",
+    "请求过于频繁",
+    "请稍后重试"
+  ],
+  "login_text_markers": [
+    "Sign in with your Google Account",
+    "Use your Google Account",
+    "登录您的 Google 账号"
+  ],
+  "summary_text_markers": [
+    "Your ratings",
+    "Rating authority",
+    "Content descriptors"
+  ],
+  "summary_min_markers": 2,
+  "rating_authorities": [
+    "ESRB",
+    "PEGI",
+    "USK",
+    "Australian Classification Board",
+    "ClassInd",
+    "GRAC",
+    "IARC",
+    "North America",
+    "Europe",
+    "Germany",
+    "Australia",
+    "Brazil",
+    "South Korea"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "fear_yes_rare",
+  "strategy": "manual_probe",
+  "answers": {
+    "violence.exists": "no",
+    "fear.contains_disturbing_content": "yes",
+    "fear.scary_elements": "yes",
+    "fear.horrifying_elements": "no",
+    "fear.scary_frequency": "rare",
+    "sexuality.exists": "no",
+    "gambling.exists": "no",
+    "language.offensive_language": "no",
+    "controlled_substance.exists": "no",
+    "crude_humor.exists": "no",
+    "digital_purchases.exists": "no",
+    "misc.user_interaction": "no",
+    "misc.precise_location": "no",
+    "misc.germany_nazi_symbols": "no",
+    "misc.korea_national_identity": "no",
+    "misc.terrorism_advocacy": "no",
+    "misc.realistic_crimes": "no"
+  }
+}

@@ -1,0 +1,7 @@
+.local/
+generated_answers*/
+results/_*
+results/*.audit.json
+__pycache__/
+*.pyc
+deliverables/

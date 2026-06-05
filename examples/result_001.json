@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "mode": "run",
+  "sample_id": "random_001",
+  "status": "example_placeholder_not_collected",
+  "resolved_answers": {
+    "violence.exists": "no",
+    "fear.contains_disturbing_content": "yes",
+    "fear.scary_elements": "yes",
+    "fear.horrifying_elements": "no",
+    "fear.scary_frequency": "rare",
+    "sexuality.exists": "no",
+    "gambling.exists": "no",
+    "language.offensive_language": "yes",
+    "controlled_substance.exists": "no",
+    "crude_humor.exists": "no",
+    "digital_purchases.exists": "yes",
+    "misc.user_interaction": "no",
+    "misc.precise_location": "no",
+    "misc.germany_nazi_symbols": "no",
+    "misc.korea_national_identity": "no",
+    "misc.terrorism_advocacy": "no",
+    "misc.realistic_crimes": "yes"
+  },
+  "summary": {
+    "ratings": [],
+    "content_descriptors": [],
+    "interactive_elements": [],
+    "raw_text": ""
+  },
+  "note": "Replace this placeholder with the first manually cross-checked Summary capture. No rating value has been fabricated."
+}
