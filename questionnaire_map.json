@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "status": "all_no_baseline_and_fear_branch_verified_other_yes_branches_pending",
+  "status": "structure_probe_20260607_expanded_deep_leaf_verification_pending",
   "scope": {
     "platform": "Google Play Console",
     "branch": "Game",
@@ -13,7 +13,9 @@
     "The Fear=yes, Scary elements=yes, Rare probe is recorded in docs/probe_yes_fear.md.",
     "The Fear=yes, Scary elements=yes, Often probe is recorded in docs/probe_yes_fear_often.md.",
     "The Fear=yes, Horrifying elements=yes, Rare/Often probes are recorded in docs/probe_yes_fear_horrifying.md.",
-    "Yes branches are not complete yet. Keep hidden child questions as N/A rather than coercing them to no."
+    "Yes branches are not complete yet. Keep hidden child questions as N/A rather than coercing them to no.",
+    "2026-06-07 structure probes expanded the map from top-level/Fear-first-pass to additional deep branches across Violence, Sexuality, Gambling, Language, Controlled Substance, Crude Humor, Digital Purchases, and Miscellaneous.",
+    "Some deep leaf Yes/choice branches are recorded as visible but still marked children_explored=false until every sequential leaf option is explicitly toggled and confirmed not to reveal more questions."
   ],
   "questions": [
     {
@@ -32,7 +34,7 @@
         "violence.gory_without_violence",
         "violence.unrelated_blood"
       ],
-      "children_explored": false,
+      "children_explored": true,
       "verified_in_console": true,
       "source": "screenshots/问卷全no.png",
       "screenshot": "screenshots/问卷全no.png"
@@ -83,10 +85,19 @@
         "parent_id": "violence.exists",
         "equals": "yes"
       },
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "violence.non_humans.setting_context",
+        "violence.non_humans.visual_style",
+        "violence.non_humans.reactions",
+        "violence.non_humans.presentation",
+        "violence.non_humans.blood_gore_level",
+        "violence.non_humans.humanlike_behavior",
+        "violence.non_humans.real_world_animals",
+        "violence.non_humans.dark_overtones"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
-      "source": "results/discover_violence_yes_questionnaire.json",
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.json",
       "screenshot": "results/discover_violence_yes_questionnaire.png"
     },
     {
@@ -102,10 +113,12 @@
         "parent_id": "violence.exists",
         "equals": "yes"
       },
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "violence.gory_without_violence.detail_level"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
-      "source": "results/discover_violence_yes_questionnaire.json",
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.gory_without_violence.json",
       "screenshot": "results/discover_violence_yes_questionnaire.png"
     },
     {
@@ -121,10 +134,12 @@
         "parent_id": "violence.exists",
         "equals": "yes"
       },
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "violence.unrelated_blood.amount_frequency"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
-      "source": "results/discover_violence_yes_questionnaire.json",
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.unrelated_blood.json",
       "screenshot": "results/discover_violence_yes_questionnaire.png"
     },
     {
@@ -471,10 +486,12 @@
         "parent_id": "fear.horrifying_elements",
         "equals": "yes"
       },
-      "children": [],
+      "children": [
+        "fear.intense_imminent_threat"
+      ],
       "children_explored": true,
       "verified_in_console": true,
-      "source": "current_console_observation_2026-06-03",
+      "source": "results/structure_probe_20260607_refined/fear_horrifying_often.json",
       "screenshot": "results/run_fear_horrifying_only.png"
     },
     {
@@ -505,8 +522,16 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "sexuality.sexual_activity.frequency",
+        "sexuality.sexual_activity.duration",
+        "sexuality.sexual_activity.depiction_obscured",
+        "sexuality.sexual_activity.depiction_no_nudity",
+        "sexuality.sexual_activity.depiction_partial_nudity",
+        "sexuality.sexual_activity.depiction_full_frontal_nudity",
+        "sexuality.sexual_activity.under_18"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "sexuality.sexual_activity",
@@ -516,7 +541,7 @@
         "parent_id": "sexuality.exists",
         "equals": "yes"
       },
-      "source": "results/discover_sexuality_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.json"
     },
     {
       "type": "checkbox_boolean",
@@ -524,8 +549,14 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "sexuality.suggestive.references_innuendo",
+        "sexuality.suggestive.overt_situations",
+        "sexuality.suggestive.activity_no_detail",
+        "sexuality.suggestive.activity_detail",
+        "sexuality.suggestive.under_18_situations"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "sexuality.suggestive_themes",
@@ -535,7 +566,7 @@
         "parent_id": "sexuality.exists",
         "equals": "yes"
       },
-      "source": "results/discover_sexuality_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.suggestive_themes.json"
     },
     {
       "type": "checkbox_boolean",
@@ -543,8 +574,10 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "sexuality.dating_games.prominent"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "sexuality.dating_games",
@@ -554,7 +587,7 @@
         "parent_id": "sexuality.exists",
         "equals": "yes"
       },
-      "source": "results/discover_sexuality_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.dating_games.json"
     },
     {
       "type": "checkbox_boolean",
@@ -562,8 +595,11 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "sexuality.nudity.revealing_outfits",
+        "sexuality.nudity.nudity"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "sexuality.nudity_revealing_outfits",
@@ -573,7 +609,7 @@
         "parent_id": "sexuality.exists",
         "equals": "yes"
       },
-      "source": "results/discover_sexuality_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.nudity_revealing_outfits.json"
     },
     {
       "type": "checkbox_boolean",
@@ -581,8 +617,10 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "sexuality.sexual_violence.presentation"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "sexuality.sexual_violence_refs",
@@ -592,7 +630,7 @@
         "parent_id": "sexuality.exists",
         "equals": "yes"
       },
-      "source": "results/discover_sexuality_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_violence_refs.json"
     },
     {
       "question_id": "gambling.exists",
@@ -621,8 +659,10 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "gambling.themes.prominent"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "gambling.themes",
@@ -632,7 +672,7 @@
         "parent_id": "gambling.exists",
         "equals": "yes"
       },
-      "source": "results/discover_gambling_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_gambling.themes.json"
     },
     {
       "type": "checkbox_boolean",
@@ -640,8 +680,10 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "gambling.playable_bingo.cash_rewards"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "gambling.playable_bingo",
@@ -651,7 +693,7 @@
         "parent_id": "gambling.exists",
         "equals": "yes"
       },
-      "source": "results/discover_gambling_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_gambling.playable_bingo.json"
     },
     {
       "type": "checkbox_boolean",
@@ -659,8 +701,10 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "gambling.playable_casino_betting.cash_rewards"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "gambling.playable_casino_betting",
@@ -670,7 +714,7 @@
         "parent_id": "gambling.exists",
         "equals": "yes"
       },
-      "source": "results/discover_gambling_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_gambling.playable_casino_betting.json"
     },
     {
       "type": "checkbox_boolean",
@@ -679,7 +723,7 @@
         "no"
       ],
       "children": [],
-      "children_explored": false,
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "gambling.in_game_currency_rewards",
@@ -718,8 +762,10 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "language.minor_profanities.frequency"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "language.minor_profanities",
@@ -729,7 +775,7 @@
         "parent_id": "language.offensive_language",
         "equals": "yes"
       },
-      "source": "results/discover_language_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_language.minor_profanities.json"
     },
     {
       "type": "checkbox_boolean",
@@ -737,8 +783,10 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "language.moderate_swearing.frequency"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "language.moderate_swearing",
@@ -748,7 +796,7 @@
         "parent_id": "language.offensive_language",
         "equals": "yes"
       },
-      "source": "results/discover_language_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_language.moderate_swearing.json"
     },
     {
       "type": "checkbox_boolean",
@@ -756,8 +804,10 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "language.discriminatory_language.frequency"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "language.discriminatory_language",
@@ -767,7 +817,7 @@
         "parent_id": "language.offensive_language",
         "equals": "yes"
       },
-      "source": "results/discover_language_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_language.discriminatory_language.json"
     },
     {
       "type": "checkbox_boolean",
@@ -775,8 +825,10 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "language.sexual_expletives.frequency"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "language.sexual_expletives",
@@ -786,7 +838,7 @@
         "parent_id": "language.offensive_language",
         "equals": "yes"
       },
-      "source": "results/discover_language_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_language.sexual_expletives.json"
     },
     {
       "question_id": "controlled_substance.exists",
@@ -816,8 +868,13 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "controlled_substance.illegal.reference",
+        "controlled_substance.illegal.use",
+        "controlled_substance.illegal.encourages_glamorizes",
+        "controlled_substance.illegal.detailed_instruction"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "controlled_substance.illegal_recreational_drugs",
@@ -827,7 +884,7 @@
         "parent_id": "controlled_substance.exists",
         "equals": "yes"
       },
-      "source": "results/discover_controlled_substance_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.illegal_recreational_drugs.json"
     },
     {
       "type": "checkbox_boolean",
@@ -835,8 +892,13 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "controlled_substance.fantasy_drugs.reference",
+        "controlled_substance.fantasy_drugs.use",
+        "controlled_substance.fantasy_drugs.encourages_glamorizes",
+        "controlled_substance.fantasy_drugs.frequency"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "controlled_substance.fantasy_drugs",
@@ -846,7 +908,7 @@
         "parent_id": "controlled_substance.exists",
         "equals": "yes"
       },
-      "source": "results/discover_controlled_substance_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.fantasy_drugs.json"
     },
     {
       "type": "checkbox_boolean",
@@ -854,8 +916,13 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "controlled_substance.medical_drugs.reference",
+        "controlled_substance.medical_drugs.use",
+        "controlled_substance.medical_drugs.encourages_glamorizes",
+        "controlled_substance.medical_drugs.frequency"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "controlled_substance.medical_drugs",
@@ -865,7 +932,7 @@
         "parent_id": "controlled_substance.exists",
         "equals": "yes"
       },
-      "source": "results/discover_controlled_substance_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.medical_drugs.json"
     },
     {
       "type": "checkbox_boolean",
@@ -873,8 +940,10 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "controlled_substance.alcohol.frequency"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "controlled_substance.alcohol",
@@ -884,7 +953,7 @@
         "parent_id": "controlled_substance.exists",
         "equals": "yes"
       },
-      "source": "results/discover_controlled_substance_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.alcohol.json"
     },
     {
       "type": "checkbox_boolean",
@@ -892,8 +961,10 @@
         "yes",
         "no"
       ],
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "controlled_substance.tobacco.frequency"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
       "screenshot": "not captured in batch branch probe",
       "question_id": "controlled_substance.tobacco",
@@ -903,7 +974,7 @@
         "parent_id": "controlled_substance.exists",
         "equals": "yes"
       },
-      "source": "results/discover_controlled_substance_yes_questionnaire.json"
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.tobacco.json"
     },
     {
       "question_id": "crude_humor.exists",
@@ -915,10 +986,15 @@
         "no"
       ],
       "visible_when": null,
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "crude_humor.mucus_belching_flatulence",
+        "crude_humor.cloud_poo_vomit",
+        "crude_humor.urination_realistic_feces",
+        "crude_humor.defecation_visual"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
-      "source": "screenshots/问卷全no.png",
+      "source": "results/structure_probe_20260607_refined/top_yes_crude_humor.exists.json",
       "screenshot": "screenshots/问卷全no.png"
     },
     {
@@ -931,10 +1007,14 @@
         "no"
       ],
       "visible_when": null,
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "digital_purchases.digital_goods",
+        "digital_purchases.cash_convertible_rewards",
+        "digital_purchases.transferable_assets"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
-      "source": "screenshots/问卷全no.png",
+      "source": "results/structure_probe_20260607_refined/top_yes_digital_purchases.exists.json",
       "screenshot": "screenshots/问卷全no.png"
     },
     {
@@ -947,10 +1027,15 @@
         "no"
       ],
       "visible_when": null,
-      "children": [],
-      "children_explored": false,
+      "children": [
+        "misc.block_users",
+        "misc.report_users",
+        "misc.chat_moderation",
+        "misc.invited_friends_only"
+      ],
+      "children_explored": true,
       "verified_in_console": true,
-      "source": "screenshots/问卷全no.png",
+      "source": "results/structure_probe_20260607_refined/top_yes_misc.user_interaction.json",
       "screenshot": "screenshots/问卷全no.png"
     },
     {
@@ -964,7 +1049,7 @@
       ],
       "visible_when": null,
       "children": [],
-      "children_explored": false,
+      "children_explored": true,
       "verified_in_console": true,
       "source": "screenshots/问卷全no.png",
       "screenshot": "screenshots/问卷全no.png"
@@ -980,7 +1065,7 @@
       ],
       "visible_when": null,
       "children": [],
-      "children_explored": false,
+      "children_explored": true,
       "verified_in_console": true,
       "source": "screenshots/问卷全no.png",
       "screenshot": "screenshots/问卷全no.png"
@@ -996,7 +1081,7 @@
       ],
       "visible_when": null,
       "children": [],
-      "children_explored": false,
+      "children_explored": true,
       "verified_in_console": true,
       "source": "screenshots/问卷全no.png",
       "screenshot": "screenshots/问卷全no.png"
@@ -1012,7 +1097,7 @@
       ],
       "visible_when": null,
       "children": [],
-      "children_explored": false,
+      "children_explored": true,
       "verified_in_console": true,
       "source": "screenshots/问卷全no.png",
       "screenshot": "screenshots/问卷全no.png"
@@ -1027,11 +1112,1302 @@
         "no"
       ],
       "visible_when": null,
+      "children": [
+        "misc.crimes_imitable",
+        "misc.criminal_techniques_detail"
+      ],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_misc.realistic_crimes.json",
+      "screenshot": "screenshots/问卷全no.png"
+    },
+    {
+      "question_id": "fear.intense_imminent_threat",
+      "section": "Fear",
+      "prompt": "Is there an intense and unrelenting sense of imminent threat?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "fear.horrifying_frequency",
+        "equals": "often"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/fear_horrifying_often.json",
+      "screenshot": "results/structure_probe_20260607_refined/fear_horrifying_often.png"
+    },
+    {
+      "question_id": "violence.non_humans.setting_context",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "In what kind of setting (context, storyline) does the violence occur?",
+      "type": "single_choice",
+      "options": [
+        "fantastical",
+        "realistic"
+      ],
+      "visible_when": {
+        "parent_id": "violence.non_humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.json",
+      "screenshot": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.png"
+    },
+    {
+      "question_id": "violence.non_humans.visual_style",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Does the game have a pixelated or childlike style?",
+      "type": "single_choice",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.non_humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.json",
+      "screenshot": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.png"
+    },
+    {
+      "question_id": "violence.non_humans.reactions",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "How would you describe the reactions to violence?",
+      "type": "single_choice",
+      "options": [
+        "unrealistic",
+        "realistic"
+      ],
+      "visible_when": {
+        "parent_id": "violence.non_humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.json",
+      "screenshot": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.png"
+    },
+    {
+      "question_id": "violence.non_humans.presentation",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "How is this violence presented in the game?",
+      "type": "single_choice",
+      "options": [
+        "referred_to",
+        "rare_distant",
+        "often_distant",
+        "rare_closeup",
+        "often_closeup"
+      ],
+      "visible_when": {
+        "parent_id": "violence.non_humans",
+        "equals": "yes"
+      },
       "children": [],
       "children_explored": false,
       "verified_in_console": true,
-      "source": "screenshots/问卷全no.png",
-      "screenshot": "screenshots/问卷全no.png"
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.json",
+      "screenshot": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.png"
+    },
+    {
+      "question_id": "violence.non_humans.blood_gore_level",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "What is the level of blood and/or gore associated with this violence?",
+      "type": "single_choice",
+      "options": [
+        "none",
+        "mild/limited",
+        "moderate",
+        "high"
+      ],
+      "visible_when": {
+        "parent_id": "violence.non_humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.json",
+      "screenshot": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.png"
+    },
+    {
+      "question_id": "violence.non_humans.humanlike_behavior",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Do any of these creatures behave or respond like humans?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.non_humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.json",
+      "screenshot": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.png"
+    },
+    {
+      "question_id": "violence.non_humans.real_world_animals",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Is any of this violence against real-world animals?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.non_humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.json",
+      "screenshot": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.png"
+    },
+    {
+      "question_id": "violence.non_humans.dark_overtones",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "Are there any fierce sounds, sinister or intimidating characters, or dark overtones associated with this violence?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "violence.non_humans",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.json",
+      "screenshot": "results/structure_probe_20260607_refined/violence_child_yes_violence.non_humans.png"
+    },
+    {
+      "question_id": "violence.gory_without_violence.detail_level",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "How explicitly depicted are these disturbing or gory images?",
+      "type": "single_choice",
+      "options": [
+        "limited_detail",
+        "moderate_detail",
+        "graphic_detail"
+      ],
+      "visible_when": {
+        "parent_id": "violence.gory_without_violence",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.gory_without_violence.json",
+      "screenshot": "results/structure_probe_20260607_refined/violence_child_yes_violence.gory_without_violence.png"
+    },
+    {
+      "question_id": "violence.unrelated_blood.amount_frequency",
+      "section": "Violence, Blood, or Gory Images",
+      "prompt": "What best describes this type of blood in the game:",
+      "type": "single_choice",
+      "options": [
+        "small_and_infrequent",
+        "large_or_frequent"
+      ],
+      "visible_when": {
+        "parent_id": "violence.unrelated_blood",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/violence_child_yes_violence.unrelated_blood.json",
+      "screenshot": "results/structure_probe_20260607_refined/violence_child_yes_violence.unrelated_blood.png"
+    },
+    {
+      "question_id": "sexuality.sexual_activity.frequency",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "How often do sexual acts occur?",
+      "type": "single_choice",
+      "options": [
+        "rarely",
+        "often"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.sexual_activity",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.png"
+    },
+    {
+      "question_id": "sexuality.sexual_activity.duration",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "What is the duration of these scenes?",
+      "type": "single_choice",
+      "options": [
+        "brief",
+        "prolonged"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.sexual_activity",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.png"
+    },
+    {
+      "question_id": "sexuality.sexual_activity.depiction_obscured",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Obscured/Innuendo - Sex act is either entirely off-camera or completely blocked from view",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.sexual_activity",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.png"
+    },
+    {
+      "question_id": "sexuality.sexual_activity.depiction_no_nudity",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Shown with No Nudity - Characters are depicted in a sexual act but no nudity is shown",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.sexual_activity",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.png"
+    },
+    {
+      "question_id": "sexuality.sexual_activity.depiction_partial_nudity",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Shown with Partial Nudity - Breasts, Buttocks",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.sexual_activity",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.png"
+    },
+    {
+      "question_id": "sexuality.sexual_activity.depiction_full_frontal_nudity",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Shown with Full Frontal Nudity",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.sexual_activity",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.png"
+    },
+    {
+      "question_id": "sexuality.sexual_activity.under_18",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Do any of these sex acts feature characters that appear to be younger than 18?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.sexual_activity",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_activity.png"
+    },
+    {
+      "question_id": "sexuality.suggestive.references_innuendo",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Suggestive references and innuendo in text, dialogue, or heard",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.suggestive_themes",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.suggestive_themes.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.suggestive_themes.png"
+    },
+    {
+      "question_id": "sexuality.suggestive.overt_situations",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Overtly sexual situations or visually depicted innuendo",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.suggestive_themes",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.suggestive_themes.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.suggestive_themes.png"
+    },
+    {
+      "question_id": "sexuality.suggestive.activity_no_detail",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "References to sexual activity without descriptive detail",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.suggestive_themes",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.suggestive_themes.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.suggestive_themes.png"
+    },
+    {
+      "question_id": "sexuality.suggestive.activity_detail",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "References to sexual activity with descriptive detail",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.suggestive_themes",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.suggestive_themes.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.suggestive_themes.png"
+    },
+    {
+      "question_id": "sexuality.suggestive.under_18_situations",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Sexual situations involving those who appear to be under 18",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.suggestive_themes",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.suggestive_themes.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.suggestive_themes.png"
+    },
+    {
+      "question_id": "sexuality.dating_games.prominent",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Are these dating games prominently featured or a strong focus of the product?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.dating_games",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.dating_games.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.dating_games.png"
+    },
+    {
+      "question_id": "sexuality.nudity.revealing_outfits",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Revealing Outfits",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.nudity_revealing_outfits",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.nudity_revealing_outfits.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.nudity_revealing_outfits.png"
+    },
+    {
+      "question_id": "sexuality.nudity.nudity",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "Nudity",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.nudity_revealing_outfits",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.nudity_revealing_outfits.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.nudity_revealing_outfits.png"
+    },
+    {
+      "question_id": "sexuality.sexual_violence.presentation",
+      "section": "Sexuality, Suggestiveness, or Dating Games",
+      "prompt": "How is the sexual violence in the game presented?",
+      "type": "single_choice",
+      "options": [
+        "visually_depicted",
+        "referred_to_only"
+      ],
+      "visible_when": {
+        "parent_id": "sexuality.sexual_violence_refs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_violence_refs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_sexuality.sexual_violence_refs.png"
+    },
+    {
+      "question_id": "gambling.themes.prominent",
+      "section": "Gambling Themes, Simulated Gambling, or Real Gambling",
+      "prompt": "Are these gambling themes prominently featured or a strong focus of the product?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "gambling.themes",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_gambling.themes.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_gambling.themes.png"
+    },
+    {
+      "question_id": "gambling.playable_bingo.cash_rewards",
+      "section": "Gambling Themes, Simulated Gambling, or Real Gambling",
+      "prompt": "Can playing these bingo games reward cash payouts or rewards of significant monetary value?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "gambling.playable_bingo",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_gambling.playable_bingo.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_gambling.playable_bingo.png"
+    },
+    {
+      "question_id": "gambling.playable_casino_betting.cash_rewards",
+      "section": "Gambling Themes, Simulated Gambling, or Real Gambling",
+      "prompt": "Can playing these casino games, lotteries, or racetrack betting games reward cash payouts or rewards of significant monetary value?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "gambling.playable_casino_betting",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_gambling.playable_casino_betting.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_gambling.playable_casino_betting.png"
+    },
+    {
+      "question_id": "language.minor_profanities.frequency",
+      "section": "Language",
+      "prompt": "How frequently do minor profanities occur?",
+      "type": "single_choice",
+      "options": [
+        "rarely",
+        "often"
+      ],
+      "visible_when": {
+        "parent_id": "language.minor_profanities",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_language.minor_profanities.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_language.minor_profanities.png"
+    },
+    {
+      "question_id": "language.moderate_swearing.frequency",
+      "section": "Language",
+      "prompt": "How frequently does moderate swearing occur?",
+      "type": "single_choice",
+      "options": [
+        "rarely",
+        "often"
+      ],
+      "visible_when": {
+        "parent_id": "language.moderate_swearing",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_language.moderate_swearing.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_language.moderate_swearing.png"
+    },
+    {
+      "question_id": "language.discriminatory_language.frequency",
+      "section": "Language",
+      "prompt": "How frequently does discriminatory language occur?",
+      "type": "single_choice",
+      "options": [
+        "rarely",
+        "often"
+      ],
+      "visible_when": {
+        "parent_id": "language.discriminatory_language",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_language.discriminatory_language.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_language.discriminatory_language.png"
+    },
+    {
+      "question_id": "language.sexual_expletives.frequency",
+      "section": "Language",
+      "prompt": "How frequently do sexual expletives occur?",
+      "type": "single_choice",
+      "options": [
+        "rarely",
+        "often"
+      ],
+      "visible_when": {
+        "parent_id": "language.sexual_expletives",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_language.sexual_expletives.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_language.sexual_expletives.png"
+    },
+    {
+      "question_id": "controlled_substance.illegal.reference",
+      "section": "Controlled Substance",
+      "prompt": "Reference",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.illegal_recreational_drugs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.illegal_recreational_drugs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.illegal_recreational_drugs.png"
+    },
+    {
+      "question_id": "controlled_substance.illegal.use",
+      "section": "Controlled Substance",
+      "prompt": "Use",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.illegal_recreational_drugs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.illegal_recreational_drugs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.illegal_recreational_drugs.png"
+    },
+    {
+      "question_id": "controlled_substance.illegal.encourages_glamorizes",
+      "section": "Controlled Substance",
+      "prompt": "Encourages/Glamorizes",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.illegal_recreational_drugs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.illegal_recreational_drugs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.illegal_recreational_drugs.png"
+    },
+    {
+      "question_id": "controlled_substance.illegal.detailed_instruction",
+      "section": "Controlled Substance",
+      "prompt": "Detailed Instruction for Use",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.illegal_recreational_drugs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.illegal_recreational_drugs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.illegal_recreational_drugs.png"
+    },
+    {
+      "question_id": "controlled_substance.fantasy_drugs.reference",
+      "section": "Controlled Substance",
+      "prompt": "Reference",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.fantasy_drugs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.fantasy_drugs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.fantasy_drugs.png"
+    },
+    {
+      "question_id": "controlled_substance.fantasy_drugs.use",
+      "section": "Controlled Substance",
+      "prompt": "Use",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.fantasy_drugs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.fantasy_drugs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.fantasy_drugs.png"
+    },
+    {
+      "question_id": "controlled_substance.fantasy_drugs.encourages_glamorizes",
+      "section": "Controlled Substance",
+      "prompt": "Encourages/Glamorizes",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.fantasy_drugs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.fantasy_drugs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.fantasy_drugs.png"
+    },
+    {
+      "question_id": "controlled_substance.fantasy_drugs.frequency",
+      "section": "Controlled Substance",
+      "prompt": "How frequently do fantasy drugs occur?",
+      "type": "single_choice",
+      "options": [
+        "rarely",
+        "often"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.fantasy_drugs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.fantasy_drugs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.fantasy_drugs.png"
+    },
+    {
+      "question_id": "controlled_substance.medical_drugs.reference",
+      "section": "Controlled Substance",
+      "prompt": "Reference",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.medical_drugs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.medical_drugs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.medical_drugs.png"
+    },
+    {
+      "question_id": "controlled_substance.medical_drugs.use",
+      "section": "Controlled Substance",
+      "prompt": "Use",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.medical_drugs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.medical_drugs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.medical_drugs.png"
+    },
+    {
+      "question_id": "controlled_substance.medical_drugs.encourages_glamorizes",
+      "section": "Controlled Substance",
+      "prompt": "Encourages/Glamorizes",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.medical_drugs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.medical_drugs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.medical_drugs.png"
+    },
+    {
+      "question_id": "controlled_substance.medical_drugs.frequency",
+      "section": "Controlled Substance",
+      "prompt": "How frequently do medical drugs occur?",
+      "type": "single_choice",
+      "options": [
+        "rarely",
+        "often"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.medical_drugs",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.medical_drugs.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.medical_drugs.png"
+    },
+    {
+      "question_id": "controlled_substance.alcohol.frequency",
+      "section": "Controlled Substance",
+      "prompt": "How frequently does this alcohol content occur?",
+      "type": "single_choice",
+      "options": [
+        "rarely",
+        "often"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.alcohol",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.alcohol.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.alcohol.png"
+    },
+    {
+      "question_id": "controlled_substance.tobacco.frequency",
+      "section": "Controlled Substance",
+      "prompt": "How frequently does this tobacco content occur?",
+      "type": "single_choice",
+      "options": [
+        "rarely",
+        "often"
+      ],
+      "visible_when": {
+        "parent_id": "controlled_substance.tobacco",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_controlled_substance.tobacco.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_controlled_substance.tobacco.png"
+    },
+    {
+      "question_id": "crude_humor.mucus_belching_flatulence",
+      "section": "Crude Humor",
+      "prompt": "Mucus, belching, flatulence sounds",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "crude_humor.exists",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_crude_humor.exists.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_crude_humor.exists.png"
+    },
+    {
+      "question_id": "crude_humor.cloud_poo_vomit",
+      "section": "Crude Humor",
+      "prompt": "Flatulence (with depiction of \"flatulence cloud\"), whimsical depictions of feces (\"poo coils\"), vomiting",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "crude_humor.exists",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_crude_humor.exists.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_crude_humor.exists.png"
+    },
+    {
+      "question_id": "crude_humor.urination_realistic_feces",
+      "section": "Crude Humor",
+      "prompt": "Urination, urine, realistically depicted feces",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "crude_humor.exists",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_crude_humor.exists.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_crude_humor.exists.png"
+    },
+    {
+      "question_id": "crude_humor.defecation_visual",
+      "section": "Crude Humor",
+      "prompt": "Act of human defecation visually depicted",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "crude_humor.exists",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_crude_humor.exists.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_crude_humor.exists.png"
+    },
+    {
+      "question_id": "digital_purchases.digital_goods",
+      "section": "Digital Purchases, Cash Convertible Rewards, or NFTs",
+      "prompt": "Purchases of digital goods",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "digital_purchases.exists",
+        "equals": "yes"
+      },
+      "children": [
+        "digital_purchases.digital_goods.random_items",
+        "digital_purchases.digital_goods.trade_system"
+      ],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_digital_purchases.exists.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_digital_purchases.exists.png"
+    },
+    {
+      "question_id": "digital_purchases.cash_convertible_rewards",
+      "section": "Digital Purchases, Cash Convertible Rewards, or NFTs",
+      "prompt": "Cash Convertible Rewards - Cash rewards, real-world items of significant monetary value, convertible cryptocurrency rewards or other play-to-earn mechanics",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "digital_purchases.exists",
+        "equals": "yes"
+      },
+      "children": [
+        "digital_purchases.cash_convertible_rewards.purchase_requirement"
+      ],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_digital_purchases.exists.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_digital_purchases.exists.png"
+    },
+    {
+      "question_id": "digital_purchases.transferable_assets",
+      "section": "Digital Purchases, Cash Convertible Rewards, or NFTs",
+      "prompt": "Issuance (e.g., minting) of transferable digital assets (e.g., NFTs)",
+      "type": "checkbox_boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "digital_purchases.exists",
+        "equals": "yes"
+      },
+      "children": [
+        "digital_purchases.transferable_assets.significant_promoted",
+        "digital_purchases.transferable_assets.marketplace",
+        "digital_purchases.transferable_assets.purchase_requirement"
+      ],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_digital_purchases.exists.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_digital_purchases.exists.png"
+    },
+    {
+      "question_id": "digital_purchases.digital_goods.random_items",
+      "section": "Digital Purchases, Cash Convertible Rewards, or NFTs",
+      "prompt": "Can these purchases include random items where the purchaser doesn't know what specific items or features they will receive (e.g., loot boxes), the purchase of items that will be used to create or unlock an unknown item or feature (e.g., a key to unlock a loot box, material used to craft a random item), items that can improve the rate of earning random items (e.g., random drop boosts), or any other chance-based purchases?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "digital_purchases.digital_goods",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_digital_purchases.digital_goods.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_digital_purchases.digital_goods.png"
+    },
+    {
+      "question_id": "digital_purchases.digital_goods.trade_system",
+      "section": "Digital Purchases, Cash Convertible Rewards, or NFTs",
+      "prompt": "Does the game have a system for players to trade items with each other using real money or in-game currency purchased with real money? (e.g. auction house, item exchange)",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "digital_purchases.digital_goods",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_digital_purchases.digital_goods.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_digital_purchases.digital_goods.png"
+    },
+    {
+      "question_id": "digital_purchases.cash_convertible_rewards.purchase_requirement",
+      "section": "Digital Purchases, Cash Convertible Rewards, or NFTs",
+      "prompt": "Does the game include the ability or requirement to wager, purchase entrance fees, additional chances to win, boosts, or any other purchases potentially related to earning or winning cash rewards or rewards of significant monetary value?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "digital_purchases.cash_convertible_rewards",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_digital_purchases.cash_convertible_rewards.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_digital_purchases.cash_convertible_rewards.png"
+    },
+    {
+      "question_id": "digital_purchases.transferable_assets.significant_promoted",
+      "section": "Digital Purchases, Cash Convertible Rewards, or NFTs",
+      "prompt": "Is the issuance of these digital assets a significant or promoted aspect of the product?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "digital_purchases.transferable_assets",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_digital_purchases.transferable_assets.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_digital_purchases.transferable_assets.png"
+    },
+    {
+      "question_id": "digital_purchases.transferable_assets.marketplace",
+      "section": "Digital Purchases, Cash Convertible Rewards, or NFTs",
+      "prompt": "Does the game contain an integrated marketplace for these assets or promote/feature a particular marketplace for these assets?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "digital_purchases.transferable_assets",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_digital_purchases.transferable_assets.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_digital_purchases.transferable_assets.png"
+    },
+    {
+      "question_id": "digital_purchases.transferable_assets.purchase_requirement",
+      "section": "Digital Purchases, Cash Convertible Rewards, or NFTs",
+      "prompt": "Does the game include the ability or requirement to make any purchases related to the issuance or earning of these digital assets?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "digital_purchases.transferable_assets",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": false,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/child_yes_digital_purchases.transferable_assets.json",
+      "screenshot": "results/structure_probe_20260607_refined/child_yes_digital_purchases.transferable_assets.png"
+    },
+    {
+      "question_id": "misc.block_users",
+      "section": "Miscellaneous",
+      "prompt": "Does the game include the ability to block users or user-generated content?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "misc.user_interaction",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_misc.user_interaction.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_misc.user_interaction.png"
+    },
+    {
+      "question_id": "misc.report_users",
+      "section": "Miscellaneous",
+      "prompt": "Does the game include the ability to report users or user-generated content?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "misc.user_interaction",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_misc.user_interaction.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_misc.user_interaction.png"
+    },
+    {
+      "question_id": "misc.chat_moderation",
+      "section": "Miscellaneous",
+      "prompt": "Does the game include chat moderation?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "misc.user_interaction",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_misc.user_interaction.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_misc.user_interaction.png"
+    },
+    {
+      "question_id": "misc.invited_friends_only",
+      "section": "Miscellaneous",
+      "prompt": "Can interactions in the game be limited to invited friends only?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "misc.user_interaction",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_misc.user_interaction.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_misc.user_interaction.png"
+    },
+    {
+      "question_id": "misc.crimes_imitable",
+      "section": "Miscellaneous",
+      "prompt": "Are these crimes or criminal techniques likely to be imitated by children or youths?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "misc.realistic_crimes",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_misc.realistic_crimes.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_misc.realistic_crimes.png"
+    },
+    {
+      "question_id": "misc.criminal_techniques_detail",
+      "section": "Miscellaneous",
+      "prompt": "Are there detailed descriptions of techniques that could be used in criminal offenses?",
+      "type": "boolean",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "visible_when": {
+        "parent_id": "misc.realistic_crimes",
+        "equals": "yes"
+      },
+      "children": [],
+      "children_explored": true,
+      "verified_in_console": true,
+      "source": "results/structure_probe_20260607_refined/top_yes_misc.realistic_crimes.json",
+      "screenshot": "results/structure_probe_20260607_refined/top_yes_misc.realistic_crimes.png"
     }
   ]
 }

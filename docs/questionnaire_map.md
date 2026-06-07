@@ -19,6 +19,13 @@
 “打开 Yes 后会出现哪些第一层问题”，还没有系统跑完所有子题组合和 Summary 评级，
 因此现在还不能开始批量随机采样。
 
+2026-06-07 追加了一轮结构探针，记录见
+`docs/structure_probe_20260607.md`。本轮将 `questionnaire_map.json` 从 53 个节点扩展到
+120 个节点，新增了 Violence、Sexuality、Gambling、Language、Controlled Substance、
+Crude Humor、Digital Purchases 和 Miscellaneous 下的多层条件题。当前地图结构校验通过，
+但仍保留 54 个深层 leaf/选项节点为 `children_explored=false`，因此正式 1000 条放量采样
+仍应暂停。
+
 ## 已确认的顶层问题
 
 ```mermaid

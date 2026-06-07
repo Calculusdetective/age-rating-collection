@@ -2,6 +2,9 @@
 generated_answers*/
 results/_*
 results/*.audit.json
+results/*20260607*
+results/structure_probe_20260607*/
 __pycache__/
 *.pyc
 deliverables/
+docs/*.pdf
